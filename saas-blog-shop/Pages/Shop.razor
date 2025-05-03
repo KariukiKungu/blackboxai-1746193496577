@@ -1,0 +1,35 @@
+@page "/shop"
+@using Microsoft.EntityFrameworkCore
+@inject saas_blog_shop.Data.ApplicationDbContext DbContext
+
+<h3>Shop Products</h3>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (!products.Any())
+{
+    <p>No products found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var product in products)
+        {
+            <li>
+                <strong>@product.Name</strong> - @product.Price.ToString("C")
+                <p>@product.Description</p>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<saas_blog_shop.Models.Product> products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await DbContext.Products.ToListAsync();
+    }
+}
