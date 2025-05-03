@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/project/sandbox/user-workspace/saas-blog-shop/obj/Debug/net8.0/scopedcss/projectbundle/saas-blog-shop.bundle.scp.css",
+      "PackagePath": "staticwebassets/saas-blog-shop.bundle.scp.css"
+    },
+    {
+      "Id": "/project/sandbox/user-workspace/saas-blog-shop/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/project/sandbox/user-workspace/saas-blog-shop/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/project/sandbox/user-workspace/saas-blog-shop/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/project/sandbox/user-workspace/saas-blog-shop/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.saas-blog-shop.props",
+      "PackagePath": "build\\saas-blog-shop.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.saas-blog-shop.props",
+      "PackagePath": "buildMultiTargeting\\saas-blog-shop.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.saas-blog-shop.props",
+      "PackagePath": "buildTransitive\\saas-blog-shop.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.saas-blog-shop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
