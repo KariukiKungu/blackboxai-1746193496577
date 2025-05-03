@@ -1,0 +1,42 @@
+@using Microsoft.AspNetCore.Components.Routing
+
+<nav>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="blog">
+                <span class="oi oi-book" aria-hidden="true"></span> Blog
+            </NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="shop">
+                <span class="oi oi-cart" aria-hidden="true"></span> Shop
+            </NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="account">
+                <span class="oi oi-person" aria-hidden="true"></span> Account
+            </NavLink>
+        </li>
+    </ul>
+</nav>
+
+<style>
+    nav {
+        padding: 0;
+    }
+    .nav-link {
+        color: #333;
+        padding: 0.5rem 1rem;
+        display: block;
+        text-decoration: none;
+    }
+    .nav-link.active {
+        font-weight: bold;
+        background-color: #e9ecef;
+    }
+</style>
