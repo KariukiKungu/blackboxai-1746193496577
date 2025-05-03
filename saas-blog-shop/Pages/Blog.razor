@@ -1,0 +1,34 @@
+@page "/blog"
+@using Microsoft.EntityFrameworkCore
+@inject saas_blog_shop.Data.ApplicationDbContext DbContext
+
+<h3>Blog Posts</h3>
+
+@if (blogPosts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (!blogPosts.Any())
+{
+    <p>No blog posts found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var post in blogPosts)
+        {
+            <li>
+                <a href="@($"/blogpost/{post.Id}")">@post.Title</a> - @post.CreatedAt.ToShortDateString()
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<saas_blog_shop.Models.BlogPost> blogPosts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        blogPosts = await DbContext.BlogPosts.ToListAsync();
+    }
+}
